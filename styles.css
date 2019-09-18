@@ -15,8 +15,41 @@ body {
     width: 90%;
     margin-top: 30% !important;
     margin: auto;
+    border-radius: 5px;
     padding-bottom: 90px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(73, 124, 227, 0.582);
+}
+
+.container_signup {
+    padding: 30px;
+    background-color: #ffffffbb;
+    width: 70%;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(73, 124, 227, 0.582);
+}
+.signup h1 {
+    font-family: sans-serif;
+    /* margin-top: 20px; */
+    margin-bottom: 35px;
+    font-weight: bold;
+    color: #497DE3;
+}
+p a {
+    color: #497DE3;
+}
+.container_signup input {
+    /* margin: 40px; */
+}
+.form-control {
+    height: 42px;
+}
+.signup {
+    font-weight: bold;
+    width: 55%;
+    margin: auto;
+    align-content: center;
+    text-align: center;
 }
 
 ul {
@@ -46,7 +79,7 @@ li:hover {
     font-weight: bold
 }
 
-p {
+.login p {
     color: #5792A4;
     font-family: sans-serif;
 }
@@ -58,8 +91,12 @@ a {
     font-family: sans-serif
 }
 
+.incont {
+    text-align: left;
+    padding-left: 30px;
+}
 
-    input {
+input {
     font-family: sans-serif;    
     background-color: #5792A4!important;
     color: white !important;
@@ -72,7 +109,7 @@ a {
 /* #6FA9A6   #65A1D9 #497DE3 */
 
 
-input[type="button"] {
+input[type="submit"] {
     background-color: #6FA9A6 !important;
     width: 70% !important;
     margin-left: 15%;
@@ -80,7 +117,7 @@ input[type="button"] {
 input::placeholder {
     color: white !important;
 }
-    /* .input1 {
+    /* .input1 {    
         font-family: sans-serif;    
         background-color: skyblue; 
         text-align: center; 
@@ -113,7 +150,7 @@ input::placeholder {
             background-repeat: no-repeat;
             width: 90%;
             margin: auto;   
-            padding-bottom: 180px;
+            padding-bottom: 150px;
             margin-top: 0% !important;
         }
 
