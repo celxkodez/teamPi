@@ -61,7 +61,7 @@ if(isset($_POST['login'])){
             $_SESSION['logged_in'] = time();
             
             //Redirect to our protected page, which we called signup.php
-            header('Location: Signup.php');
+            header('Location: signup.php');
             exit;
             
         } else{
@@ -100,7 +100,7 @@ catch(Exception $e) {
                             <input type="password" class="form-control" placeholder="Password" required name="password" class="input1">
                             <ul><li><a href="#">Forgot Password?</a></li></ul>
                             <input type="submit" class="form-control submit" name="login" value="Login" class="input2">
-                            <ul><li><a href="Signup.php">Create Account</a></li></ul> 
+                            <ul><li><a href="signup.php">Create Account</a></li></ul> 
                         </div>  
                     </form>
                     
