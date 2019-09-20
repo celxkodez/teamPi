@@ -88,7 +88,7 @@ if(isset($_POST['submit'])){
     //If the signup process is successful.
     if($result){
         //What you do here is up to you!
-        echo 'Thank you for registering with our website.';
+        echo 'Thank you for registering with with us.';
     }
     
 }
@@ -128,7 +128,7 @@ catch(Exception $e) {
                             <input type="text" class="form-control incont" placeholder="Username" required name="username" >
                             <input type="password" class="form-control incont" placeholder="Password" required name="password" >
                             <input type="submit" class="form-control submit" name="submit" value="Sign Up" >
-                            <p>Got an account? <a href="Login.php">Log In</a></p> 
+                            <p>Got an account? <a href="index.php">Log In</a></p> 
                         </div>  
                     </form>
                     

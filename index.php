@@ -1,6 +1,13 @@
-
-
 <?php
+
+session_start();
+ 
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: welcome.php");
+    exit;
+}
+
 try{
 //login.php
 
@@ -59,10 +66,14 @@ if(isset($_POST['login'])){
             //Provide the user with a login session.
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['logged_in'] = time();
-            
-            //Redirect to our protected page, which we called signup.php
-            header('Location: Signup.php');
-            exit;
+            $_SESSION["username"] = $username;                            
+                            
+            // Redirect user to welcome page
+            header("location: welcome.php");
+
+            // //Redirect to our protected page, which we called signup.php
+            // header('Location: signup.php');
+            // exit;
             
         } else{
             //$validPassword was FALSE. Passwords do not match.
@@ -100,7 +111,7 @@ catch(Exception $e) {
                             <input type="password" class="form-control" placeholder="Password" required name="password" class="input1">
                             <ul><li><a href="#">Forgot Password?</a></li></ul>
                             <input type="submit" class="form-control submit" name="login" value="Login" class="input2">
-                            <ul><li><a href="Signup.php">Create Account</a></li></ul> 
+                            <ul><li><a href="signup.php">Create Account</a></li></ul> 
                         </div>  
                     </form>
                     
